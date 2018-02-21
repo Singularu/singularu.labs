@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="wrapper">
+        <div id="container">
+            {{ account.name }}
+            {% for customer in customers %}
+                <div class="customer">
+                    <span>Name: {{ customer.firstName }}</span>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
